@@ -1,0 +1,36 @@
+# Node modules
+node_modules/
+
+# Compilación TypeScript
+dist/
+build/
+*.tsbuildinfo
+
+# Archivos temporales
+*.log
+*.tmp
+*.temp
+
+# Archivos del entorno
+.env
+.env.local
+.env.*.local
+
+# Archivos de subida
+uploads/
+*.docx
+key_examples_edit.docx
+
+# Editor configs
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Sistema operativo
+*.swp
