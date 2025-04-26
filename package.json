@@ -1,10 +1,10 @@
 {
-  "name": "node-express-web-ts",
+  "name": "docx-template-replacer",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "dev": "nodemon --watch --ext 'ts,json' --exec 'npm run build && npm run start'",
+    "dev": "nodemon --watch src --ext ts,json --exec \"npm run build && npm run start\"",
     "build": "tsc",
     "start": "node dist/index.js"
   },
@@ -12,8 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/pizzip": "^3.0.5",
-    "ejs": "^3.1.9",
+    "@xmldom/xmldom": "^0.9.8",
     "express": "^4.21.2",
     "mammoth": "^1.9.0",
     "multer": "^1.4.5-lts.2",
@@ -23,6 +22,7 @@
     "@types/express": "^4.17.21",
     "@types/multer": "^1.4.12",
     "@types/node": "^20.10.0",
+    "@types/pizzip": "^3.0.5",
     "nodemon": "^3.0.1",
     "typescript": "^5.3.2"
   }

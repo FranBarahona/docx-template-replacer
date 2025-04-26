@@ -1,17 +1,5 @@
 import PizZip = require("pizzip");
-import { Readable } from "stream";
-// import { DOMParser } from "@xmldom/xmldom";
-
-
-
-
-const streamToBuffer = async (stream: Readable): Promise<Buffer> => {
-  const chunks: Buffer[] = [];
-  for await (const chunk of stream) {
-    chunks.push(Buffer.isBuffer(chunk) ? chunk : Buffer.from(chunk));
-  }
-  return Buffer.concat(chunks);
-}
+import { DOMParser, XMLSerializer } from "@xmldom/xmldom";
 
 export const replaceKeysDocumentTemplate = async (params: {
   file: Buffer;
